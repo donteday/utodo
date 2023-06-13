@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { stateToggle, deleteTask } from '../../redux/slices/taskSlice'
 
 
-const TaskItem = ({ index, content, done}) => {
+const TaskItem = ({ index, content, done}: any) => {
     const dispatch = useDispatch();
 
     function isDone() {

@@ -7,7 +7,7 @@ const Tasks = () => {
     const tasks = useSelector((state: any) => state.tasks.value)
 
     return (<div>
-        {tasks.map((task, index) => <TaskItem key={index}
+        {tasks.map((task: any, index: number) => <TaskItem key={index}
         index={index}
         {...task}/> )}
         

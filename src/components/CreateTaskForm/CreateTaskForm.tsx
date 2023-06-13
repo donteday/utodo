@@ -8,7 +8,7 @@ const CreateTaskForm = () => {
     const dispatch = useDispatch();
     let inputRef = useRef(null);
 
-    function btnHandler(e) {
+    function btnHandler(e: any) {
         e.preventDefault();        
         if ((inputRef.current as any).value !== '') {
             dispatch(create({

@@ -26,7 +26,7 @@ export const taskSlice = createSlice({
       state.value[index.payload].done = state.value[index.payload].done ? false : true;
     },
     deleteTask: (state, index) => {
-      state.value = state.value.filter((e, i) => i !== index.payload);
+      state.value = state.value.filter((e: number, i: number) => i !== index.payload);
     }
   }
 })
