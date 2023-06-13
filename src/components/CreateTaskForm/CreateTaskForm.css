@@ -1,0 +1,50 @@
+.form {
+    margin: 100px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__input {
+    padding: 25px 10px;
+    width: 600px;
+    height: 1em;
+    overflow: visible;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.form__input:focus {
+    outline: 3px solid rgb(128, 0, 255);
+    box-shadow: 0px 0px 20px 2px rgb(128, 0, 255);
+}
+
+.form__input::placeholder {
+    color: rgb(212, 212, 212);
+    transition: all .3s ease-in-out;
+}
+
+.form__input:focus::placeholder {
+    transform: translateY(-40px);
+    z-index: 2;
+}
+
+.form__btn {
+    position: absolute;
+    right: 0;
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: rgb(212, 212, 212);
+    cursor: cell;
+    transition: all .3s ease-in;
+}
+
+.form__btn:hover  {
+    color: rgb(128, 0, 255);
+}

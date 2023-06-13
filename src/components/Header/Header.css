@@ -1,0 +1,9 @@
+.header {
+    font-weight: 100;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(66deg, rgba(90,34,195,1) 0%, rgba(201,45,253,1) 100%);
+    background-clip: text;
+    color: rgba(240, 248, 255, 0);
+}

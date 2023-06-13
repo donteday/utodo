@@ -1,0 +1,54 @@
+.task__item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+}
+
+.task__item p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.task__item-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid rgb(212, 212, 212);
+    margin-right: 5px;
+    font-size: 90px;
+    color: rgb(128, 0, 255);
+    cursor: pointer;
+}
+
+.task__item-done {
+    color: rgb(212, 212, 212);
+    text-decoration: line-through;
+}
+
+.btn__delete {
+    opacity: 0;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 30px;
+    color: rgb(212, 212, 212);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.task__item:hover .btn__delete {
+    opacity: 1;
+}
+
+.btn__delete:hover {
+    color: rgb(128, 0, 255);
+}
